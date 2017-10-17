@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+
+#Thin Webserver
+gem 'thin'
+
+#JSON
+gem 'json', '~> 2.1'
