@@ -7,3 +7,8 @@ gem 'thin'
 
 #JSON
 gem 'json', '~> 2.1'
+
+group :development, :test do
+    gem 'rack-test'
+    gem 'test-unit'
+end

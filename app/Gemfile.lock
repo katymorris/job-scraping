@@ -5,14 +5,19 @@ GEM
     eventmachine (1.2.5)
     json (2.1.0)
     mustermann (1.0.1)
+    power_assert (1.1.0)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
+    rack-test (0.7.0)
+      rack (>= 1.0, < 3)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
       rack-protection (= 2.0.0)
       tilt (~> 2.0)
+    test-unit (3.2.6)
+      power_assert
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -24,7 +29,9 @@ PLATFORMS
 
 DEPENDENCIES
   json (~> 2.1)
+  rack-test
   sinatra
+  test-unit
   thin
 
 BUNDLED WITH
