@@ -8,8 +8,9 @@ class HiSinatra < Sinatra::Base
         erb :index
     end
 
-    get '/test' do
-        "Hello World"
+    get '/results' do
+        scrape
+        erb :results
     end
 end
 
